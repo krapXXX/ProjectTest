@@ -16,6 +16,14 @@ public:
 		x = a;
 		y = b;
 	}
+	int GetX()
+	{
+		return x;
+	}
+	int GetY()
+	{
+		return y;
+    }
 };
 
 int main()
@@ -27,5 +35,6 @@ int main()
 	Point b;
 	b.Init(10, 20);
 	b.Print();
-
+	cout << a.GetX() << endl;
+	cout << b.GetX() << endl;
 }
